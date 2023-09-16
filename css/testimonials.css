@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 #testimonial {
   height: 60vh;
+  background-color: #b7e9ee20;
 }
-#testimonial .title{
+#testimonial .title {
   margin-bottom: 3rem;
 }
 .carousel {
@@ -74,16 +75,16 @@
   z-index: 970;
   transition: ease 0.4s;
 }
-#right-img{
+#right-img {
   right: 1rem;
 }
-#left-img{
+#left-img {
   left: 1rem;
 }
 .carouselButton:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.carouselButton:active{
+.carouselButton:active {
   scale: 0.8;
 }
 
@@ -97,7 +98,7 @@ ____________________________________________________________________*/
 /* Media query for tablets (768px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Add tablet-specific styles here */
-  .carousel{
+  .carousel {
     width: 40rem;
     align-self: center;
   }
@@ -106,7 +107,7 @@ ____________________________________________________________________*/
 /* Media query for desktops (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
   /* Add desktop-specific styles here */
-  .carousel{
+  .carousel {
     width: 40rem;
     align-self: center;
   }
