@@ -53,3 +53,19 @@
   text-decoration: underline;
   cursor: pointer;
 }
+/*__________________________________________________________________
+      
+desktop and tablet devices
+
+____________________________________________________________________*/
+/* Styles for mobile devices (default) */
+
+/* Media query for tablets (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add tablet-specific styles here */
+}
+
+/* Media query for desktops (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  /* Add desktop-specific styles here */
+}

@@ -16,6 +16,9 @@
     <script src="js/navlinks.js" defer></script>
     <script src="js/swipper.js" defer></script>
     <script src="js/typer.js" defer></script>
+    <script src="js/listitems.js" defer></script>
+    <script src="js/projects.js" defer></script>
+    <script src="js/backtotop.js" defer></script>
   </head>
   <body>
     <div id="toggleHeaderBtn">
@@ -65,7 +68,7 @@
         <ul class="navigation-bar">
           <li class="items">
             <img src="assets/icons/outline-home.svg" alt="" />
-            <a href="#Home" class="naver active">Home</a>
+            <a href="#Home" class="naver">Home</a>
           </li>
           <li class="items">
             <img src="assets/icons/person.svg" alt="" />
@@ -467,12 +470,12 @@
           <h1 class="title">Projects</h1>
           <div class="content">
             <ul class="project-nav">
-              <li><a href="#" class="active">All</a></li>
-              <li><a href="#">App</a></li>
-              <li><a href="#">Web</a></li>
+              <li><a href="#" class="active" data-category="all">All</a></li>
+              <li><a href="#" data-category="web">Web</a></li>
+              <li><a href="#" data-category="app">App</a></li>
             </ul>
             <div class="project-image-continer">
-              <div class="project-img">
+              <div class="project-img web">
                 <img
                   src="assets/img/projects/blackjack.png"
                   alt=""
@@ -486,7 +489,7 @@
                   </div>
                 </div>
               </div>
-              <div class="project-img">
+              <div class="project-img web">
                 <img
                   src="assets/img/projects/calculator.png"
                   alt=""
@@ -500,7 +503,7 @@
                   </div>
                 </div>
               </div>
-              <div class="project-img">
+              <div class="project-img app">
                 <img
                   src="assets/img/projects/chainscharity.png"
                   alt=""
@@ -514,7 +517,7 @@
                   </div>
                 </div>
               </div>
-              <div class="project-img">
+              <div class="project-img app">
                 <img
                   src="assets/img/projects/colorpallete.png"
                   alt=""
@@ -528,7 +531,7 @@
                   </div>
                 </div>
               </div>
-              <div class="project-img">
+              <div class="project-img web">
                 <img
                   src="assets/img/projects/postlanderclone.png"
                   alt=""
@@ -542,7 +545,7 @@
                   </div>
                 </div>
               </div>
-              <div class="project-img">
+              <div class="project-img app">
                 <img
                   src="assets/img/projects/counter.png"
                   alt=""
@@ -556,7 +559,7 @@
                   </div>
                 </div>
               </div>
-              <div class="project-img">
+              <div class="project-img web">
                 <img
                   src="assets/img/projects/prepmaster.png"
                   alt=""
@@ -570,7 +573,7 @@
                   </div>
                 </div>
               </div>
-              <div class="project-img">
+              <div class="project-img app">
                 <img
                   src="assets/img/projects/youtubeclone.png"
                   alt=""
@@ -611,9 +614,7 @@
                     Abel is a very competent individual who is assisting me and
                     many others in learning the actual meaning of programming.
                     Starting with solving problems and progressing to the design
-                    of user interfaces that generate seamless interactions. I
-                    appreciate what he has done for the community and am certain
-                    that he will continue to do so.
+                    of user interfaces that generate seamless interactions.
                   </p>
                   <h3 class="name">John Smith</h3>
                   <div class="job">Freelancer</div>
@@ -629,15 +630,13 @@
                 />
                 <div class="person">
                   <p class="heading">
-                    Abel is a very competent individual who is assisting me and
-                    many others in learning the actual meaning of programming.
-                    Starting with solving problems and progressing to the design
-                    of user interfaces that generate seamless interactions. I
-                    appreciate what he has done for the community and am certain
-                    that he will continue to do so.
+                    Abel is a talented graphic designer who has brought our
+                    creative projects to life with her innovative designs. His
+                    attention to detail and dedication to delivering exceptional
+                    work make her a valuable asset to our team.
                   </p>
-                  <h3 class="name">John Smith</h3>
-                  <div class="job">Freelancer</div>
+                  <h3 class="name">Sarah Johnson</h3>
+                  <div class="job">Graphic Designer</div>
                 </div>
               </div>
             </li>
@@ -650,15 +649,13 @@
                 />
                 <div class="person">
                   <p class="heading">
-                    Abel is a very competent individual who is assisting me and
-                    many others in learning the actual meaning of programming.
-                    Starting with solving problems and progressing to the design
-                    of user interfaces that generate seamless interactions. I
-                    appreciate what he has done for the community and am certain
-                    that he will continue to do so.
+                    Abel's marketing strategies have greatly contributed to the
+                    success of our campaigns. Her creativity and data-driven
+                    approach have helped us reach new heights in our industry.
+                    He's a true marketing expert.
                   </p>
-                  <h3 class="name">John Smith</h3>
-                  <div class="job">Freelancer</div>
+                  <h3 class="name">Maria Garcia</h3>
+                  <div class="job">Marketing Manager</div>
                 </div>
               </div>
             </li>
@@ -671,15 +668,13 @@
                 />
                 <div class="person">
                   <p class="heading">
-                    Abel is a very competent individual who is assisting me and
-                    many others in learning the actual meaning of programming.
-                    Starting with solving problems and progressing to the design
-                    of user interfaces that generate seamless interactions. I
-                    appreciate what he has done for the community and am certain
-                    that he will continue to do so.
+                    Abel's coding skills are impressive, and he has a deep
+                    understanding of software development. He consistently
+                    delivers high-quality code that improves our products. We're
+                    lucky to have him on our development team.
                   </p>
-                  <h3 class="name">John Smith</h3>
-                  <div class="job">Freelancer</div>
+                  <h3 class="name">David Miller</h3>
+                  <div class="job">Software Engineer</div>
                 </div>
               </div>
             </li>
@@ -692,15 +687,13 @@
                 />
                 <div class="person">
                   <p class="heading">
-                    Abel is a very competent individual who is assisting me and
-                    many others in learning the actual meaning of programming.
-                    Starting with solving problems and progressing to the design
-                    of user interfaces that generate seamless interactions. I
-                    appreciate what he has done for the community and am certain
-                    that he will continue to do so.
+                    Abel is a meticulous accountant who ensures our financial
+                    records are accurate and well-maintained. His expertise in
+                    financial analysis has been instrumental in guiding our
+                    business decisions.
                   </p>
-                  <h3 class="name">John Smith</h3>
-                  <div class="job">Freelancer</div>
+                  <h3 class="name">Robert Anderson</h3>
+                  <div class="job">Accountant</div>
                 </div>
               </div>
             </li>
@@ -713,15 +706,13 @@
                 />
                 <div class="person">
                   <p class="heading">
-                    Abel is a very competent individual who is assisting me and
-                    many others in learning the actual meaning of programming.
-                    Starting with solving problems and progressing to the design
-                    of user interfaces that generate seamless interactions. I
-                    appreciate what he has done for the community and am certain
-                    that he will continue to do so.
+                    Abel's passion for teaching and his ability to connect with
+                    students are truly remarkable. He goes above and beyond to
+                    make learning engaging and enjoyable. Our students are
+                    fortunate to have him as their teacher.
                   </p>
-                  <h3 class="name">John Smith</h3>
-                  <div class="job">Freelancer</div>
+                  <h3 class="name">Michael Wilson</h3>
+                  <div class="job">Teacher</div>
                 </div>
               </div>
             </li>
@@ -734,15 +725,14 @@
                 />
                 <div class="person">
                   <p class="heading">
-                    Abel is a very competent individual who is assisting me and
-                    many others in learning the actual meaning of programming.
-                    Starting with solving problems and progressing to the design
-                    of user interfaces that generate seamless interactions. I
-                    appreciate what he has done for the community and am certain
-                    that he will continue to do so.
+                    Abel is a DevOps specialist with a strong passion for
+                    optimizing our development and operations processes. His
+                    dedication to streamlining workflows and improving system
+                    reliability has made a significant impact on our
+                    organization. Abel's expertise is invaluable to our team.
                   </p>
-                  <h3 class="name">John Smith</h3>
-                  <div class="job">Freelancer</div>
+                  <h3 class="name">Emily Davis</h3>
+                  <div class="job">DevOps Specialist</div>
                 </div>
               </div>
             </li>

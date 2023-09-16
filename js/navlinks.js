@@ -1,49 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
   const toggleHeaderBtn = document.getElementById("toggleHeaderBtn");
   const mainHeader = document.getElementById("mainHeader");
-
-  // Track the state of the header (visible or hidden)
+  const navItems = document.querySelectorAll(".items");
   let isHeaderVisible = false;
-
-  // Function to toggle the header's position
-  function toggleHeader() {
-    if (isHeaderVisible) {
-      mainHeader.style.left = "-600px"; // Move header off-screen to the left
-    } else {
-      mainHeader.style.left = "0"; // Bring header to the original position
-    }
-    isHeaderVisible = !isHeaderVisible; // Toggle the state
-  }
-
-  // Add click event listener to the toggle button
-  toggleHeaderBtn.addEventListener("click", toggleHeader);
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleHeaderBtn = document.getElementById("toggleHeaderBtn");
-  const mainHeader = document.getElementById("mainHeader");
-  const navItems = document.querySelectorAll(".items"); // Select all list items
-
-  // Function to hide the header
   function hideHeader() {
-    mainHeader.style.left = "-600px"; // Move header off-screen to the left
-    isHeaderVisible = false; // Update the state to hidden
+    if (window.innerWidth <= 768) {
+      mainHeader.style.left = "-1000px";
+      isHeaderVisible = false;
+    }
   }
 
-  // Add click event listeners to each list item
   navItems.forEach(function (item) {
     item.addEventListener("click", hideHeader);
   });
 
-  // Function to toggle the header's position
   function toggleHeader() {
     if (isHeaderVisible) {
-      mainHeader.style.left = "-300px"; // Move header off-screen to the left
+      mainHeader.style.left = "-1000px";
     } else {
-      mainHeader.style.left = "0"; // Bring header to the original position
+      mainHeader.style.left = "0";
     }
-    isHeaderVisible = !isHeaderVisible; // Toggle the state
+    isHeaderVisible = !isHeaderVisible;
   }
 
-  // Add click event listener to the toggle button
   toggleHeaderBtn.addEventListener("click", toggleHeader);
 });

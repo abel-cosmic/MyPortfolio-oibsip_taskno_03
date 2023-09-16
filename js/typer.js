@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    const speed = 100; // Constant typing speed
+    const speed = 150; // Constant typing speed
     setTimeout(typeText, speed);
   }
 

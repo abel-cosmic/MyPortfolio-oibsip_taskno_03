@@ -41,11 +41,13 @@
 .project-image-continer {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .project-img {
   position: relative;
   background-color: var(--sectionbg);
   box-shadow: 0px 10px 100px rgb(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
 }
 
 .project-img .image {
@@ -86,4 +88,20 @@
 .constantly:hover {
   background-color: var(--primary);
   opacity: 1;
+}
+/*__________________________________________________________________
+      
+desktop and tablet devices
+
+____________________________________________________________________*/
+/* Styles for mobile devices (default) */
+
+/* Media query for tablets (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add tablet-specific styles here */
+}
+
+/* Media query for desktops (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  /* Add desktop-specific styles here */
 }
