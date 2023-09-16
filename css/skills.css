@@ -45,6 +45,13 @@ ____________________________________________________________________*/
 /* Media query for tablets (768px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Add tablet-specific styles here */
+  #skill-section .content ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+  #skill-section .skill-list a img {
+    width: 30rem;
+  }
 }
 
 /* Media query for desktops (min-width: 1024px) */

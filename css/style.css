@@ -22,16 +22,15 @@ body {
   position: relative;
 }
 #banner {
+  display: flex;
+  align-items: center;
   height: 100vh;
   background: url("../assets/img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
-.hero-section {
-  position: absolute;
-  top: 30%;
-  left: 3rem;
-  height: 100vh;
+.hero-section{
+  margin: auto;
 }
 .hero-section h1 {
   color: #fff;
@@ -107,6 +106,7 @@ main section .subtitle {
   padding: 1rem;
   border-radius: 100%;
   z-index: 999;
+  opacity: 1;
 }
 .arrow {
   width: 1.2rem;
@@ -128,10 +128,6 @@ ____________________________________________________________________*/
   #banner {
     margin-left: 0rem;
   }
-  .hero-section {
-    top: 30%;
-    left: 3rem;
-  }
 }
 
 /* Media query for desktops (min-width: 1024px) */
@@ -141,8 +137,10 @@ ____________________________________________________________________*/
   }
   #banner {
     margin-left: 30rem;
+    z-index: 999;
   }
-  .hero-section {
-    top: 25%;
+  #toggleHeaderBtn{
+    opacity: 0;
+    z-index: -1;
   }
 }

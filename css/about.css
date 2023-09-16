@@ -33,7 +33,7 @@
   gap: 4px;
   align-items: center;
 }
-#about-section .contain .lists li div{
+#about-section .contain .lists li div {
   display: flex;
   gap: 4px;
   align-items: center;
@@ -58,14 +58,37 @@
 desktop and tablet devices
 
 ____________________________________________________________________*/
-/* Styles for mobile devices (default) */
-
-/* Media query for tablets (768px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Add tablet-specific styles here */
+@media screen and (min-width: 806px) and (max-width: 1023px) {
+  #about-section .contain {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  #about-section .contain .lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    gap: 1rem;
+  }
+  #about-section .contain .lists li {
+    font-size: 0.8rem;
+  }
 }
-
-/* Media query for desktops (min-width: 1024px) */
-@media screen and (min-width: 1024px) {
-  /* Add desktop-specific styles here */
+@media screen and (min-width: 768px) {
+  #about-section .contain {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  #about-section .contain .lists {
+    margin: 1rem;
+    gap: 1rem;
+  }
+  #about-section .contain .lists li {
+    font-size: 0.8rem;
+  }
+  .profile-image {
+    width: 20rem;
+    object-fit: cover;
+  }
 }

@@ -53,7 +53,7 @@
 .project-img .image {
   width: 20rem;
   height: 20rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 .overlay {
   top: 0;
@@ -99,9 +99,24 @@ ____________________________________________________________________*/
 /* Media query for tablets (768px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Add tablet-specific styles here */
+  .project-image-continer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Media query for desktops (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
   /* Add desktop-specific styles here */
+  .project-image-continer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* Add desktop-specific styles here */
+  .project-image-continer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

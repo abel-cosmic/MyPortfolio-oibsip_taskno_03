@@ -21,23 +21,28 @@
   flex-direction: column;
   gap: 1rem;
 }
-#contact .down label {
+#contact .down div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+#contact .down div label {
   color: rgb(98, 98, 98);
 }
-#contact .down input[type="text"],
-#contact .down input[type="email"] {
+#contact .down div input[type="text"],
+#contact .down div input[type="email"] {
   border: 0.5px grey solid;
   padding-top: 0.6rem;
   padding-bottom: 1rem;
   padding-left: 0.8rem;
   font-size: 1.1rem;
 }
-#contact .down textarea {
+#contact .down div textarea {
   border: 0.5px grey solid;
   padding-top: 0.6rem;
   padding-left: 0.8rem;
 }
-#contact .down input[type="submit"] {
+#contact .down  input[type="submit"] {
   width: fit-content;
   margin: auto;
   padding: 1rem 2rem;
@@ -47,7 +52,7 @@
   border-radius: 0.3rem;
   transition: ease 150ms;
 }
-#contact .down input[type="submit"]:hover {
+#contact .down  input[type="submit"]:hover {
   background-color: #3d50fba8;
 }
 #contact .down input[type="submit"]:active {
@@ -95,14 +100,31 @@
 desktop and tablet devices
 
 ____________________________________________________________________*/
-/* Styles for mobile devices (default) */
-
-/* Media query for tablets (768px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Add tablet-specific styles here */
+@media screen and (min-width: 768px) and (max-width: 1750px) {
+  #contact .up {
+    display: flex;
+    gap: 1rem;
+  }
+  #contact .down div.row-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-/* Media query for desktops (min-width: 1024px) */
-@media screen and (min-width: 1024px) {
-  /* Add desktop-specific styles here */
+@media screen and (min-width: 1751px) {
+  #contact .up {
+    display: flex;
+    gap: 2rem;
+  }
+  #contact .down div.row-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
+
+

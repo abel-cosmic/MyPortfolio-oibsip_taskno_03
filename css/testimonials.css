@@ -97,9 +97,17 @@ ____________________________________________________________________*/
 /* Media query for tablets (768px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Add tablet-specific styles here */
+  .carousel{
+    width: 40rem;
+    align-self: center;
+  }
 }
 
 /* Media query for desktops (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
   /* Add desktop-specific styles here */
+  .carousel{
+    width: 40rem;
+    align-self: center;
+  }
 }
