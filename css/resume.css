@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+:root {
+  --primary: #3d50fb;
+  --background: #040b14;
+  --secondary: #272829;
+  --text: #050d18;
+  --opaciticbackround: rgba(5, 13, 24, 0.3);
+  --sectionbg: #f5f8fd;
+  --headers: #173b6c;
+  --blured: #b7e9ee20;
+}
+.resume {
+  background-color: var(--blured);
+}
+.resume .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contents-resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--primary);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--primary);
+}
+.resume .section-title{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

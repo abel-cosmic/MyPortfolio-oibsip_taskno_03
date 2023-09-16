@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/**
+ <footer>
+      <div>@ Copyright <span>MyPortfolio</span></div>
+      Designed by <a href="">Abel shibabaw</a>
+    </footer>
+**/
+footer {
+  padding: 1.5rem;
+  background-color: black;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer div,
+footer span,
+footer a {
+  font-size: 0.8rem;
+  color: white;
+}
+footer div {
+  font-weight: 400;
+
+  color: rgb(195, 195, 195);
+}
+footer div span {
+  font-weight: 700;
+}
+footer div a {
+  text-decoration: none;
+  color: #3d50fbe1;
+  transition: ease 0.4s;
+}
+footer div a:hover{
+    color: #3d50fb;
+}

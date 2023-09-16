@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+/*--------------------------------------------------------------
+# Pojects
+--------------------------------------------------------------*/
+:root {
+  --primary: #3d50fb;
+  --background: #040b14;
+  --secondary: #272829;
+  --text: #050d18;
+  --opaciticbackround: rgba(5, 13, 24, 0.3);
+  --sectionbg: #f5f8fd;
+  --headers: #173b6c;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-nav {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--sectionbg);
+  border-radius: 2rem;
+  margin: 2rem;
+}
+.project-nav li a:hover {
+  color: var(--primary);
+}
+.project-nav li a.active {
+  color: var(--primary);
+}
+.project-nav li a {
+  text-decoration: none;
+}
+.project-image-continer {
+  display: flex;
+  flex-direction: column;
+}
+.project-img {
+  position: relative;
+  background-color: var(--sectionbg);
+  box-shadow: 0px 10px 100px rgb(0, 0, 0, 0.1);
+}
+
+.project-img .image {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.overlay {
+  top: 0;
+  right: 0;
+  background-color: #336ab169;
+  height: 20rem;
+  width: 100%;
+  position: relative;
+  position: absolute;
+  opacity: 0;
+  z-index: 500;
+  transition: ease 0.4s;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay a img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+.constantly {
+  background-color: #173a6c6c;
+  padding: 2rem;
+  width: fit-content;
+  border-radius: 100%;
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  transition: ease 0.4s;
+}
+.constantly:hover {
+  background-color: var(--primary);
+  opacity: 1;
+}

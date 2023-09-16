@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+# skills
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+#skill-section .content {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+#skill-section .content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  list-style-type: none;
+}
+#skill-section .content ul li .bullet {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+#skill-section .content ul li {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+#skill-section .content ul li span {
+  font-weight: 700;
+}
+#skill-section .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#skill-section .skill-list a img {
+  width: 20rem;
+}

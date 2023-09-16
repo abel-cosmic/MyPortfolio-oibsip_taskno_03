@@ -1,0 +1,114 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+:root {
+  --primary: #3d50fb;
+  --background: #040b14;
+  --secondary: #272829;
+  --text: #050d18;
+  --opaciticbackround: rgba(5, 13, 24, 0.3);
+  --sectionbg: #f5f8fd;
+  --headers: #173b6c;
+}
+
+* {
+  color: var(--text);
+  font-family: "Roboto", system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+#banner {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+.hero-section {
+  position: absolute;
+  top: 20rem;
+  left: 3rem;
+}
+.hero-section h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.hero-section p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.typing-items {
+  color: #fff;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid #3d50fb;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 1px solid #3d50fb;
+  white-space: nowrap;
+  transition: ease 0.4s;
+  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3d50fb;
+  }
+}
+
+/*_____________________________________________________________
+General configurations
+_______________________________________________________________*/
+
+main section {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+main section .title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--headers);
+  width: fit-content;
+  border-bottom: 0.2rem solid var(--primary);
+}
+main section .subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--headers);
+  width: fit-content;
+}
+.backtotop {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 100%;
+  z-index: 999;
+}
+.arrow {
+  width: 0.8rem;
+  height: 0.8rem;
+}
